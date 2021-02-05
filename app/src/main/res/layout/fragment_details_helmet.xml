@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.helmet.DetailsHelmetFragment">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/detailsScrollPaddingBottom">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/startLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mHelmetImageCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:backgroundTint="@color/colorCarViewBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/mHelmetDamageReductionProgressBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/mHelmetImageView"
+                        android:layout_width="235dp"
+                        android:layout_height="300dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.ramijemli.percentagechartview.PercentageChartView
+                    android:id="@+id/mHelmetDamageReductionProgressBar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mHelmetImageCardView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:pcv_animDuration="2200"
+                    app:pcv_animInterpolator="accelerate_decelerate"
+                    app:pcv_backgroundBarColor="@color/colorWhite"
+                    app:pcv_mode="ring"
+                    app:pcv_orientation="clockwise"
+                    app:pcv_progressBarStyle="round"
+                    app:pcv_progressColor="@color/colorPrimaryDark"
+                    app:pcv_startAngle="90"
+                    app:pcv_textColor="@color/colorPrimary"
+                    app:pcv_textSize="25sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:text="Damage Reduction"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mHelmetImageCardView"
+                    app:layout_constraintTop_toBottomOf="@+id/mHelmetDamageReductionProgressBar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detailsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/startLayout">
+
+                <TextView
+                    android:id="@+id/mHelmetFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:inputType="textMultiLine"
+                    android:text="HelmetName"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/itemDetailsTextSize"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/mHelmetDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:text="description"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mHelmetFullName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/statLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="11dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailsLayout">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:backgroundTint="@color/colorCarViewBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="4dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ir.androidexception.datatable.DataTable
+                        android:id="@+id/mHelmetStatTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/colorCarViewBackground"
+                        android:backgroundTint="@color/colorCarViewBackground"
+                        app:corner_radius="8dp"
+                        app:direction="ltr"
+                        app:header_background_color="@color/colorCarViewBackground"
+                        app:header_gravity="center"
+                        app:header_horizontal_padding="0dp"
+                        app:header_text_color="#000"
+                        app:header_text_size="7sp"
+                        app:header_vertical_padding="16dp"
+                        app:persian_number="false"
+                        app:row_background_color="@color/colorCarViewBackground"
+                        app:row_gravity="center"
+                        app:row_text_color="#000"
+                        app:row_text_size="6sp"
+                        app:row_vertical_padding="16dp"
+                        app:shadow="0.2dp" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

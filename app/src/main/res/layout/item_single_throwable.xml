@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:backgroundTint="@color/colorCarViewBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="@dimen/itemCardLayoutMargin"
+    android:padding="@dimen/itemCardPadding"
+    app:cardCornerRadius="@dimen/itemCardCornerRadius"
+    app:cardElevation="@dimen/itemCardElevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/throwableConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/throwableImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemSingleImageHeight"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/throwableName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/itemSingleTextPaddingStart"
+            android:paddingTop="@dimen/itemSingleTextPaddingTop"
+            android:paddingEnd="@dimen/itemSingleTextPaddingEnd"
+            android:paddingBottom="@dimen/itemSingleTextPaddingBottom"
+            android:text="ThrowableName"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/recycler_view_item_header_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/throwableImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

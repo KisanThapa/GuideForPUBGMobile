@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="fontFamily">@font/nunito_sans</item>
+
+        <!-- Status bar colors and Navigation bar colors -->
+        <item name="android:statusBarColor" type="">@color/colorBackground</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="fontFamily">@font/nunito_sans_bold</item>
+    </style>
+    <!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+    <style name="NavigationViewTextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/itemCardLayoutMargin"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:backgroundTint="@color/colorCarViewBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/itemCardPadding"
+    app:cardCornerRadius="@dimen/itemCardCornerRadius"
+    app:cardElevation="@dimen/itemCardElevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/muzzleConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/muzzleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemSingleImageHeight"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@id/muzzleName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/muzzleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/itemSingleTextPaddingStart"
+            android:paddingTop="@dimen/itemSingleTextPaddingTop"
+            android:paddingEnd="@dimen/itemSingleTextPaddingEnd"
+            android:paddingBottom="@dimen/itemSingleTextPaddingBottom"
+            android:text="MuzzleName"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/recycler_view_item_header_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/muzzleImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

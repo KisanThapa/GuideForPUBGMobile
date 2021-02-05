@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/homeGroupMenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+
+    </group>
+
+    <group
+        android:id="@+id/weaponsGroupMenu"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_weapons"
+            android:icon="@drawable/ic_menu_weapon"
+            android:title="@string/menu_weapons" />
+        <item
+            android:id="@+id/nav_throwable"
+            android:icon="@drawable/ic_menu_throwable"
+            android:title="@string/menu_throwables" />
+    </group>
+
+    <group
+        android:id="@+id/mapVehicleGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_map"
+            android:title="@string/menu_maps" />
+
+        <item
+            android:id="@+id/nav_vehicle"
+            android:icon="@drawable/ic_menu_vehicle"
+            android:title="@string/menu_vehicles" />
+    </group>
+
+    <group
+        android:id="@+id/otherItemGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_attachment"
+            android:icon="@drawable/ic_menu_attachment"
+            android:title="@string/menu_attachments" />
+
+        <item
+            android:id="@+id/nav_ammunition"
+            android:icon="@drawable/ic_menu_ammunition"
+            android:title="@string/menu_ammunition" />
+
+        <item
+            android:id="@+id/nav_consumable"
+            android:icon="@drawable/ic_menu_consumable"
+            android:title="@string/menu_consumables" />
+
+
+        <item
+            android:id="@+id/nav_armor"
+            android:icon="@drawable/ic_menu_armor"
+            android:title="@string/menu_armors" />
+
+        <item
+            android:id="@+id/nav_helmet"
+            android:icon="@drawable/ic_menu_helmet"
+            android:title="@string/menu_helmets" />
+
+        <item
+            android:id="@+id/nav_backpack"
+            android:icon="@drawable/ic_menu_backpack"
+            android:title="@string/menu_back_packs" />
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_gallery"-->
+        <!--            android:icon="@drawable/ic_menu_gallery"-->
+        <!--            android:title="@string/menu_gallery" />-->
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_slideshow"-->
+        <!--            android:icon="@drawable/ic_menu_slideshow"-->
+        <!--            android:title="@string/menu_slideshow" />-->
+
+    </group>
+
+</menu>

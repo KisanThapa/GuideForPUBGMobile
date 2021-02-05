@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <!--        <action-->
+        <!--            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"-->
+        <!--            app:destination="@id/nav_home_second" />-->
+    </fragment>
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_home_second"-->
+    <!--        android:name="com.np.kisanthapa.guideforpubgmobile.ui.home.HomeSecondFragment"-->
+    <!--        android:label="@string/home_second"-->
+    <!--        tools:layout="@layout/fragment_home_second">-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"-->
+    <!--            app:destination="@id/nav_home" />-->
+
+    <!--        <argument-->
+    <!--            android:name="myArg"-->
+    <!--            app:argType="string" />-->
+    <!--    </fragment>-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_gallery"-->
+    <!--        android:name="com.np.kisanthapa.guideforpubgmobile.ui.gallery.GalleryFragment"-->
+    <!--        android:label="@string/menu_gallery"-->
+    <!--        tools:layout="@layout/fragment_gallery" />-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_slideshow"-->
+    <!--        android:name="com.np.kisanthapa.guideforpubgmobile.ui.slideshow.SlideshowFragment"-->
+    <!--        android:label="@string/menu_slideshow"-->
+    <!--        tools:layout="@layout/fragment_slideshow" />-->
+
+    <fragment
+        android:id="@+id/nav_weapons"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.weapons.WeaponsFragment"
+        android:label="@string/menu_weapons"
+        tools:layout="@layout/weapons_fragment" />
+
+    <fragment
+        android:id="@+id/nav_ammunition"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.ammunition.AmmunitionFragment"
+        android:label="Ammunition"
+        tools:layout="@layout/ammunition_fragment">
+        <action
+            android:id="@+id/action_nav_ammunition_to_detailsAmmunitionFragment"
+            app:destination="@id/detailsAmmunitionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_armor"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.armor.ArmorFragment"
+        android:label="Armors"
+        tools:layout="@layout/armor_fragment">
+        <action
+            android:id="@+id/action_nav_armor_to_detailsArmorFragment"
+            app:destination="@id/detailsArmorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_attachment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.AttachmentFragment"
+        android:label="Attachments"
+        tools:layout="@layout/attachment_fragment">
+        <action
+            android:id="@+id/action_nav_attachment_to_stockFragment"
+            app:destination="@id/stockFragment" />
+        <action
+            android:id="@+id/action_nav_attachment_to_gripFragment"
+            app:destination="@id/gripFragment" />
+        <action
+            android:id="@+id/action_nav_attachment_to_magazineFragment"
+            app:destination="@id/magazineFragment" />
+        <action
+            android:id="@+id/action_nav_attachment_to_scopeFragment"
+            app:destination="@id/scopeFragment" />
+        <action
+            android:id="@+id/action_nav_attachment_to_muzzleFragment"
+            app:destination="@id/muzzleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_backpack"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.backpack.BagPackFragment"
+        android:label="BackPacks"
+        tools:layout="@layout/backpack_fragment">
+        <action
+            android:id="@+id/action_nav_backpack_to_detailsBackPackFragment"
+            app:destination="@id/detailsBackPackFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_consumable"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.consumable.ConsumableFragment"
+        android:label="Consumable Items"
+        tools:layout="@layout/consumable_fragment">
+        <action
+            android:id="@+id/action_nav_consumable_to_detailsConsumableFragment"
+            app:destination="@id/detailsConsumableFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_helmet"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.helmet.HelmetFragment"
+        android:label="Helmets"
+        tools:layout="@layout/helmet_fragment">
+        <action
+            android:id="@+id/action_nav_helmet_to_detailsHelmetFragment"
+            app:destination="@id/detailsHelmetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.map.MapFragment"
+        android:label="Maps"
+        tools:layout="@layout/map_fragment">
+        <action
+            android:id="@+id/action_nav_map_to_mapDetailsFragment"
+            app:destination="@id/mapDetailsFragment" />
+        <action
+            android:id="@+id/action_nav_map_to_mapInformationFragment"
+            app:destination="@id/mapInformationFragment" />
+        <action
+            android:id="@+id/action_nav_map_to_popularDropFragment"
+            app:destination="@id/popularDropFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_throwable"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.throwable.ThrowableFragment"
+        android:label="Throwable Items"
+        tools:layout="@layout/throwable_fragment">
+        <action
+            android:id="@+id/action_nav_throwable_to_detailsThrowableFragment"
+            app:destination="@id/detailsThrowableFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vehicle"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.vehicle.VehicleFragment"
+        android:label="Vehicles"
+        tools:layout="@layout/vehicle_fragment">
+        <action
+            android:id="@+id/action_nav_vehicle_to_detailsVehicleFragment"
+            app:destination="@id/detailsVehicleFragment" />
+        <action
+            android:id="@+id/action_nav_vehicle_to_vehicleStatFragment"
+            app:destination="@id/vehicleStatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsBackPackFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.backpack.DetailsBackPackFragment"
+        android:label="{appbar_label}"
+        tools:layout="@layout/fragment_details_back_pack">
+        <argument
+            android:name="singleBackPackDetail"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.backpack.model.BackPackModelClassParcelable" />
+        <argument
+            android:name="appbar_label"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsHelmetFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.helmet.DetailsHelmetFragment"
+        android:label="{appbar_label}"
+        tools:layout="@layout/fragment_details_helmet">
+        <argument
+            android:name="helmetDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.helmet.model.HelmetModelClassParcelable" />
+        <argument
+            android:name="appbar_label"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsArmorFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.armor.DetailsArmorFragment"
+        android:label="{appbar_label}"
+        tools:layout="@layout/fragment_details_armor">
+        <argument
+            android:name="armorDataAgrs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.armor.model.ArmorModelClassParcelable" />
+        <argument
+            android:name="appbar_label"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailsThrowableFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.throwable.DetailsThrowableFragment"
+        android:label="{appbar_label}"
+        tools:layout="@layout/fragment_details_throwable">
+
+        <argument
+            android:name="throwableDataAgrs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.throwable.model.ThrowableModelClassParcelable" />
+        <argument
+            android:name="appbar_label"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailsConsumableFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.consumable.DetailsConsumableFragment"
+        android:label="{app_label}"
+        tools:layout="@layout/fragment_details_consumable">
+        <argument
+            android:name="consumableDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.consumable.model.ConsumableModelClassParcelable" />
+        <argument
+            android:name="app_label"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsVehicleFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.vehicle.DetailsVehicleFragment"
+        android:label="{app_label}"
+        tools:layout="@layout/fragment_details_vehicle">
+        <argument
+            android:name="vehicleDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.vehicle.model.VehicleModelClassParcelable" />
+
+        <argument
+            android:name="app_label"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vehicleStatFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.vehicle.VehicleStatFragment"
+        android:label="{app_label}"
+        tools:layout="@layout/fragment_vehicle_stat">
+
+        <argument
+            android:name="vehicleDataListArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.vehicle.model.VehicleModelClassParcelable[]" />
+
+        <argument
+            android:name="app_label"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapDetailsFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.map.MapDetailsFragment"
+        android:label="{mapName}"
+        tools:layout="@layout/fragment_map_details">
+        <argument
+            android:name="mapId"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="mapName"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/mapInformationFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.map.mapdetails.MapInformationFragment"
+        android:label="{app_label}"
+        tools:layout="@layout/map_information_fragment">
+        <argument
+            android:name="mapIdArgs"
+            app:argType="integer" />
+        <argument
+            android:name="app_label"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularDropFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.map.mapdetails.PopularDropFragment"
+        android:label="{app_label}"
+        tools:layout="@layout/popular_drop_fragment">
+        <argument
+            android:name="mapIdArgs"
+            app:argType="integer" />
+        <argument
+            android:name="app_label"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsAmmunitionFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.ammunition.DetailsAmmunitionFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/fragment_details_ammunition">
+        <argument
+            android:name="ammunitionDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.ammunition.model.AmmunitionModelParcelable" />
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/gripFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.grip.GripFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/grip_fragment">
+        <!--        <argument-->
+        <!--            android:name="gripDataArgs"-->
+        <!--            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.grip.model.GripModelParcelable" />-->
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_gripFragment_to_gripDetailsFragment"
+            app:destination="@id/gripDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/magazineFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.magazine.MagazineFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/magazine_fragment">
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_magazineFragment_to_magazineDetailsFragment"
+            app:destination="@id/magazineDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/muzzleFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.muzzle.MuzzleFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/muzzle_fragment">
+        <!--        <argument-->
+        <!--            android:name="muzzleDataArgs"-->
+        <!--            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.muzzle.model.MuzzleModelParcelable" />-->
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_muzzleFragment_to_muzzleDetailsFragment"
+            app:destination="@id/muzzleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scopeFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.scope.ScopeFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/scope_fragment">
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_scopeFragment_to_scopeDetailsFragment"
+            app:destination="@id/scopeDetailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/stockFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.stock.StockFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/stock_fragment">
+        <!--        <argument-->
+        <!--            android:name="stockDataArgs"-->
+        <!--            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.stock.model.StockModelParcelable" />-->
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_stockFragment_to_stockDetailsFragment"
+            app:destination="@id/stockDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scopeDetailsFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.scope.ScopeDetailsFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/fragment_scope_details">
+        <argument
+            android:name="scopeDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.scope.model.ScopeModelParcelable" />
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/magazineDetailsFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.magazine.MagazineDetailsFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/fragment_magazine_details">
+        <argument
+            android:name="magazineDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.magazine.model.MagazineModelParcelable" />
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/muzzleDetailsFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.muzzle.MuzzleDetailsFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/fragment_muzzle_details">
+        <argument
+            android:name="muzzleDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.muzzle.model.MuzzleModelParcelable" />
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/gripDetailsFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.grip.GripDetailsFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/fragment_grip_details">
+        <argument
+            android:name="gripDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.grip.model.GripModelParcelable" />
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockDetailsFragment"
+        android:name="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.stock.StockDetailsFragment"
+        android:label="{appBarLabel}"
+        tools:layout="@layout/fragment_stock_details" >
+        <argument
+            android:name="stockDataArgs"
+            app:argType="com.np.kisanthapa.guideforpubgmobile.ui.attachment.ui.stock.model.StockModelParcelable" />
+        <argument
+            android:name="appBarLabel"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

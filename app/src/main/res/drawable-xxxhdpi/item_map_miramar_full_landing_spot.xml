@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/item_map_miramar" />
+
+    <item android:drawable="@drawable/item_map_miramar_layer_landing_spot" />
+
+</layer-list>
